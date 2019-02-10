@@ -1,8 +1,6 @@
 # PoolGame
 A C++ pool game, which implements multiple design patterns. (Created in OOD class)
 
-[Live demo](https://www.youtube.com/watch?v=CqzB8ZlZhaE)
-
 The game was implemented in several stages, each of which including more features than the last. The code takes in a json config file which specifies which stage, the user wants to run, as well as other information. Example for stage 3:
 
 ```
@@ -54,6 +52,7 @@ The game was implemented in several stages, each of which including more feature
 ```
 
 ## Features
+[Live demo of features.](https://www.youtube.com/watch?v=CqzB8ZlZhaE)
 **Stage 1 features:**
 - Balls can bounce off eachother / the walls
 - Balls are removed from the game when going into black corner holes
