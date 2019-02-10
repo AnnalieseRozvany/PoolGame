@@ -1,6 +1,8 @@
 # PoolGame
 A C++ pool game, which implements multiple design patterns. (Created in OOD class)
 
+[Live demo](https://www.youtube.com/watch?v=CqzB8ZlZhaE)
+
 The game was implemented in several stages, each of which including more features than the last. The code takes in a json config file which specifies which stage, the user wants to run, as well as other information. Example for stage 3:
 
 ```
@@ -69,6 +71,7 @@ The game was implemented in several stages, each of which including more feature
 - Balls can be added mid-game, by pressing 'B'
 - Pockets can be added mid-game, by pressing 'P'
 - When 'X' is pressed, breakable balls with children balls will explode.
+- Scoring sytem, win/lose, etc. 
 
 ## Design Patterns
 **Abstract Factory & Builder Design Pattern** - used to create objects and build game.
