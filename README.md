@@ -1,7 +1,7 @@
 # PoolGame
 A C++ pool game, which implements multiple design patterns. (Created in OOD class)
 
-The game was implemented in several stages, each of which including more features than the last. The code takes in a json config file which specifies which stage, the user wants to run, as well as other information.
+The game was implemented in several stages, each of which including more features than the last. The code takes in a json config file which specifies which stage, the user wants to run, as well as other information. Example for stage 3:
 
 ```
 {
@@ -51,6 +51,7 @@ The game was implemented in several stages, each of which including more feature
 }
 ```
 
+## Features
 **Stage 1 features:**
 - Balls can bounce off eachother / the walls
 - Balls are removed from the game when going into black corner holes
@@ -66,10 +67,11 @@ The game was implemented in several stages, each of which including more feature
 - The game can be started again by pressing 'N'. 
 - Pockets can be specified to be in/out portals. Each "in" portal has a corresponding "out" pocket". If the ball rolls into the in pocket, it will roll out of the out pocket. 
 - Balls can be added mid-game, by pressing 'B'
+- Pockets can be added mid-game, by pressing 'P'
 - When 'X' is pressed, breakable balls with children balls will explode.
 
 ## Design Patterns
-
+**Abstract Factory & Builder Design Pattern** - used to create objects and build game.
 
 **Composite Design Pattern** - for the inclusion of balls within other balls
 
@@ -77,4 +79,4 @@ The game was implemented in several stages, each of which including more feature
 
 **Memento Design Pattern** - used to store the states of the balls produced by the prototype cloning so that they can be returned to. The state in the memento design pattern is a pointer to a vector of pointers to Balls. The dialog class acts as the caretaker, managing the mementos. 
 
-**Decorator pattern** - used to make portals from pockets. 
+**Decorator pattern** - used to make portals from pockets and to add additional functionality to white ball.
