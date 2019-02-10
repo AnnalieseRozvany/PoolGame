@@ -1,0 +1,45 @@
+{
+"stage3" : true,
+"table" : {
+ "colour":"#00cc99",
+ "size":{
+ "x":900,
+ "y":450
+ },
+ "friction":0.1,
+ "pockets": [
+ {"position":{"x":5,"y":5}, "radius":20},
+ {"position":{"x":895,"y":445}, "radius":20},
+ {"position":{"x": 895,"y":5}, "radius":20},
+ {"position":{"x":5,"y":445}, "radius":20},
+ {"position":{"x":200,"y":200},"radius":20, "portal": true, "number": 1, "out": 2, "type": 0},
+ {"position":{"x":400,"y":400},"radius":20, "portal": true, "number": 2, "type": 1},
+ {"position":{"x":600,"y":200},"radius":20, "portal": true, "number": 3, "out": 4, "type": 0},
+ {"position":{"x":600,"y":400},"radius":20, "portal": true, "number": 4, "type": 1},
+ {"position":{"x":800,"y":300},"radius":20, "portal": true, "number": 5, "out": 6, "type": 0},
+ {"position":{"x":550,"y":150},"radius":20, "portal": true, "number": 6, "type": 1},
+ {"position":{"x":700,"y":300},"radius":20, "portal": true, "number": 5, "out": 6, "type": 0},
+ {"position":{"x":100,"y":100},"radius":20, "portal": true, "number": 6, "type": 1}
+ ]
+},
+"balls" : [
+ {"position":{"x":50,"y":50},"velocity":{"x":0,"y":0},"mass":1},
+ {"colour":"#9966ff","position":{"x":150,"y":60},"mass":1,"radius":10},
+ {"colour":"#9966ff","position":{"x":-150,"y":60},"mass":1,"radius":10},
+ {"colour":"#6699ff","position":{"x":150,"y":40},"velocity":{"x":0,"y":0},"radius":10},
+ {"colour":"#ffccff","position":{"x":250,"y":70},"mass":1,"radius":20,"strength":1e5,
+ "balls":[
+ {"position":{"x":-10,"y":0},"mass":1,"radius":10},
+ {"position":{"x":-100,"y":0},"mass":1,"radius":10},
+ {"colour":"aqua","position":{"x":10,"y":0}},
+ {"colour":"#ff9999","position":{"x":0,"y":-10}},
+ {"position":{"x":0,"y":10}, "mass":2,"strength":1e4,
+ "balls":[
+ {"colour":"aqua","strength":1e3,
+ "balls":[
+ {"colour":"#ff9999", "strength":1e4}
+ ]
+ }]
+ }]
+ }]
+}
